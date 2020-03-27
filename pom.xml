@@ -14,6 +14,7 @@
         <module>mail</module>
 <!--        <module>execute</module>-->
         <module>common</module>
+        <module>user</module>
     </modules>
 
     <groupId>cn.coget.dora</groupId>
@@ -26,8 +27,7 @@
         <dubbo.version>2.7.1</dubbo.version>
 
         <mysql-connector-java.version>5.1.46</mysql-connector-java.version>
-        <druid.version>1.1.16</druid.version>
-        <drools.version>7.10.0.Final</drools.version>
+        <druid.version>1.1.21</druid.version>
         <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
 
         <org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
@@ -108,6 +108,16 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+                <version>${springboot.version}</version>
             </dependency>
 
             <dependency>

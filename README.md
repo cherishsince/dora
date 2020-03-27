@@ -1,7 +1,7 @@
 
-# doraemon 
+# dora 
 
-**Doraemon** 是一个 GitHub ，每日定时提交代码的 tools？
+**dora** 是一个 GitHub ，每日定时提交代码的 tools？
 
 - 可自行扩展 push 内容
 - 可扩展热点图定时定量提交

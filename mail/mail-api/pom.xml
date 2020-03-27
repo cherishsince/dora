@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>mail</artifactId>
-        <groupId>cn.coget</groupId>
+        <groupId>cn.coget.dora</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -13,8 +13,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>cn.coget</groupId>
+            <groupId>cn.coget.dora</groupId>
             <artifactId>common-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
