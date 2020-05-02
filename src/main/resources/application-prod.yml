@@ -9,7 +9,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/doraemon?useSSL=false&useUnicode=true&characterEncoding=UTF-8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: 91uN8dpIHda14e==
+    password: '@D23d7a3df91cc42'
 
 # mybatis-plus
 mybatis-plus:
