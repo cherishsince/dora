@@ -1,11 +1,18 @@
 package cn.coget.dora.user;
 
+import com.google.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.UUID;
 
@@ -18,9 +25,22 @@ import java.util.UUID;
  */
 public class UserApplication {
 
-    public static void main(String[] args) {
-        System.setProperty("webdriver.gecko.driver", "/Users/sin/github/dora/user/src/main/resources/geckodriver");
-        WebDriver driver = new FirefoxDriver();
+    public static void main(String[] args) throws IOException {
+//        System.setProperty("webdriver.gecko.driver", "/Users/sin/github/dora/user/src/main/resources/geckodriver");
+//        WebDriver driver = new FirefoxDriver();
+
+        System.setProperty("webdriver.chrome.driver", "/Users/sin/github/dora/user/src/main/resources/chromedriver20191118");
+//        WebDriver driver = new ChromeDriver();
+//        System.setProperty("webdriver.chrome.driver", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("debuggerAddress", "127.0.0.1:9222");
+        WebDriver driver = new ChromeDriver(options);
+//        WebDriver driver = new ChromeDriver(new ChromeDriverService(
+//                new File("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"),
+//                9222,
+//                ImmutableList.<String>builder().build(),
+//                ImmutableMap.<String, String>builder().put("debuggerAddress", "wx://127.0.0.1:9222").build()
+//        ), options);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         try {
             driver.get("https://github.com/join?source=header-home/");
