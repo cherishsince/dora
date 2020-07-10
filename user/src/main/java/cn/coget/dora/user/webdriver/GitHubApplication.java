@@ -1,4 +1,4 @@
-package cn.coget.dora.user;
+package cn.coget.dora.user.webdriver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

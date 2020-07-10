@@ -13,13 +13,14 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class GitHubShellGenerator extends BaseShellGeneratorSupport implements ShellGenerator {
+
     private static final String TEMPLATE_PATH = "shell-template/github-template.sh";
 
     public GitHubShellGenerator() {
     }
 
     public String templatePath() {
-        return "shell-template/github-template.sh";
+        return TEMPLATE_PATH;
     }
 
     public String generate(String template, ShellConfig shellConfig) {

@@ -1,4 +1,4 @@
-package cn.coget.dora.user;
+package cn.coget.dora.user.webdriver;
 
 import com.google.common.collect.Lists;
 import org.openqa.selenium.By;

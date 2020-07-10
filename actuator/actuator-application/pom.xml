@@ -3,14 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>execute</artifactId>
+        <artifactId>actuator</artifactId>
         <groupId>cn.coget.dora</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+    <artifactId>actuator-application</artifactId>
 
-    <artifactId>execute-service</artifactId>
     <dependencies>
+
+        <!-- common -->
+        <dependency>
+            <groupId>cn.coget.dora</groupId>
+            <artifactId>common-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.coget.dora</groupId>
+            <artifactId>common-spring-boot</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <!-- Spring 核心 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -91,7 +105,6 @@
             <artifactId>lombok</artifactId>
             <version>${org.projectlombok.version}</version>
         </dependency>
+
     </dependencies>
-
-
 </project>

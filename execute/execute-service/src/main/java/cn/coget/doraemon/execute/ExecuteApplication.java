@@ -19,12 +19,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableAsync(
         proxyTargetClass = true
 )
-public class DoraemonApplication {
-    public DoraemonApplication() {
-    }
+public class ExecuteApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DoraemonApplication.class, args);
+        SpringApplication.run(ExecuteApplication.class, args);
     }
 
     @Bean

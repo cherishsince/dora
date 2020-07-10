@@ -12,9 +12,10 @@
 <!--    </parent>-->
     <modules>
         <module>mail</module>
-<!--        <module>execute</module>-->
+        <module>execute</module>
         <module>common</module>
         <module>user</module>
+        <module>actuator</module>
     </modules>
 
     <groupId>cn.coget.dora</groupId>
@@ -135,7 +136,6 @@
                 <artifactId>mybatis-plus-annotation</artifactId>
                 <version>${mybatis-plus.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-core</artifactId>

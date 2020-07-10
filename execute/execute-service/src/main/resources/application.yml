@@ -1,7 +1,0 @@
-
-# 服务
-spring:
-  application:
-    name: doraemon
-  profiles:
-    active: dev
