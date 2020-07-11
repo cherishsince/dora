@@ -16,6 +16,7 @@
         <module>common</module>
         <module>user</module>
         <module>actuator</module>
+        <module>demo</module>
     </modules>
 
     <groupId>cn.coget.dora</groupId>
