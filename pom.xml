@@ -42,7 +42,7 @@
         <mybatis.version>3.5.1</mybatis.version>
         <mybatis-plus.version>3.1.1</mybatis-plus.version>
 
-        <xxl-job.version>2.0.1</xxl-job.version>
+        <xxl-job.version>2.3.0</xxl-job.version>
         <guava.version>27.0.1-jre</guava.version>
 
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
